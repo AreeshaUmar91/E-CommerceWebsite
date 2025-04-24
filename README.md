@@ -1,0 +1,1 @@
+#This is e commerce site project <br>Tools:<br>1.Html<br>2.Css<br>3.Php<br>4.Javascript<br>It has following pages:<br>1.Home <br>2.Services <br>3.Reviews <br>4.Services <br>5.Suggestion<br>6.Login <br>7.Add to cart <br>8.Contact <br>9.About Us <br>You can easily move from one page to another 
