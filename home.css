@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #121212;
+  color: #ffffff;
+}
+header {
+  position: sticky;
+  top: 0; /* Keeps the header at the top of the screen */
+  background-color: #333; /* Ensure the background is visible */
+  z-index: 1000; /* Make sure the header stays above other content */
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the header */
+  padding: 10px 0; /* Adds some padding to the header */
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.page{
+  text-align: center;
+}
+.page h1{
+  padding: 10px;
+border: 1px solid rgb(27, 100, 51);
+border-radius: 20px;
+  margin-top: 50px;
+  background-color:  #84C444 ;
+  color: #ffffff;
+  width: fit-content;
+}
+.para{
+  padding: 10px;
+  border: 1px solid rgb(27, 100, 51);
+
+  margin-top: 10px;
+  background-color:  #84C444;
+  color: #ffffff;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header p {
+  font-size: 18px;
+}
+
+section {
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+section u{
+  color: #84C444;
+} 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #84C444 ;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333333 ;
+}
+
+.review-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: Black;
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-city {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.review-comment {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.review-rating {
+    font-size: 22px;
+    color: #FFD700; /* Gold color for stars */
+    margin-top: 10px;
+}
+
+.no-reviews {
+    font-size: 18px;
+    color: #888;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px; /* Adjust header font size */
+  }
+
+  .page h1 {
+    font-size: 28px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 14px; /* Adjust paragraph font size */
+    padding: 8px;
+  }
+
+  section {
+    padding: 30px 15px; /* Adjust padding for sections */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+}
+
+/* When screen width is smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Smaller header font size for mobile */
+  }
+
+  .page h1 {
+    font-size: 24px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 12px; /* Adjust paragraph font size */
+    padding: 6px;
+  }
+
+  section {
+    padding: 20px 10px; /* Adjust padding for mobile */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 12px; /* Adjust paragraph font size */
+  }
+}

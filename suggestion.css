@@ -1,0 +1,157 @@
+/* Skin Type Selection */
+.skin-type-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px white;
+  width: 60%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.skin-type-container label {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+#skin-type {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+/* Style for the product recommendation container */
+.product-recommendation {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Style for the recommended product text */
+.product-recommendation h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the product description */
+.product-recommendation p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block; /* Ensures it stays on one line */
+  max-width: 80%; /* Optional: controls width */
+  white-space: nowrap; /* Ensures text stays on a single line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+}
+
+/* Hover effect on the product recommendation container */
+/* .product-recommendation:hover {
+  background-color: #333;
+  border-color: #f4a261;
+  transform: scale(1.05);
+  color: white;
+} */
+
+/* Style for the product text when hovering */
+/* .product-recommendation:hover p {
+  background-color: #333;
+  text-decoration: underline;
+  color: white;
+} */
+/* .product-recommendation p :hover {
+  background-color: #cf8617;
+  text-decoration: underline;
+  color: white;
+} */
+
+/* Add a smooth transition effect */
+.product-recommendation h3, .product-recommendation p {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+@media (max-width: 768px) {
+  /* Skin Type Container */
+  .skin-type-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .skin-type-container label {
+    font-size: 16px;
+  }
+
+  #skin-type {
+    font-size: 14px;
+  }
+
+  /* Product Recommendation */
+  .product-recommendation {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .product-recommendation h3 {
+    font-size: 16px;
+  }
+
+  .product-recommendation p {
+    font-size: 14px;
+    max-width: 100%;
+    white-space: normal; /* Allow text to wrap on smaller screens */
+  }
+}
+
+/* When screen width is smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  /* Skin Type Container */
+  .skin-type-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .skin-type-container label {
+    font-size: 14px;
+  }
+
+  #skin-type {
+    font-size: 14px;
+  }
+
+  /* Product Recommendation */
+  .product-recommendation {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .product-recommendation h3 {
+    font-size: 14px;
+  }
+
+  .product-recommendation p {
+    font-size: 12px;
+    max-width: 100%;
+    white-space: normal; /* Allow text to wrap on smaller screens */
+  }
+}

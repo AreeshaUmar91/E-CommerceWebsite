@@ -1,0 +1,124 @@
+.container h1{
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgb(27, 100, 51);
+  border-radius: 20px;
+    margin-top: 50px;
+    background-color:  #84C444 ;
+    color: #ffffff;
+    width: fit-content;
+}
+header li a img{
+  background-color: #ffffff;
+}
+#cart-items-container h2{
+  padding: 3px;
+  border: 1px solid rgb(27, 100, 51);
+  border-radius: 20px;
+    margin-top: 50px;
+    background-color:  #84C444 ;
+    color: #ffffff;
+    width: fit-content;
+}
+#items-list{
+  border: 1px solid rgb(27, 100, 51);
+  border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 1px;
+    padding: 10px;
+    width: fit-content;
+}
+/* General button styling */
+.add-to-cart {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  /* White text */
+  padding: 10px 20px;
+  /* Padding inside the button */
+  border: none;
+  /* Remove default border */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Set the font size */
+  cursor: pointer;
+  /* Change cursor to a pointer on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+  /* Darker green when hovered */
+}
+
+/* Add extra space between products */
+.product {
+  margin-bottom: 20px;
+}
+
+/* Optional: Button on mobile devices */
+@media (max-width: 600px) {
+  .add-to-cart {
+    padding: 12px 25px;
+    /* Larger button on mobile */
+    font-size: 18px;
+    /* Larger text on mobile */
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px; /* Adjust header font size */
+  }
+
+  .page h1 {
+    font-size: 28px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 14px; /* Adjust paragraph font size */
+    padding: 8px;
+  }
+
+  section {
+    padding: 30px 15px; /* Adjust padding for sections */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+}
+
+/* When screen width is smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Smaller header font size for mobile */
+  }
+
+  .page h1 {
+    font-size: 24px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 12px; /* Adjust paragraph font size */
+    padding: 6px;
+  }
+
+  section {
+    padding: 20px 10px; /* Adjust padding for mobile */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 12px; /* Adjust paragraph font size */
+  }
+}
+

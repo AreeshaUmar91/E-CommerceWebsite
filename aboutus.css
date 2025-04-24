@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.about-us {
+  text-align: center;
+  padding: 40px;
+}
+
+.about-us1 {
+  width: 80%;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding: 3px;
+  border: 1px solid rgb(27, 100, 51);
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: #84C444;
+  color: #ffffff;
+  width: fit-content;
+}
+
+.aboutuspage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-us1 p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
+  border: 1px solid rgb(27, 100, 51);
+  border-radius: 20px;
+  margin-top: 30px;
+  width: fit-content;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 600px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  height: 600px;
+}
+
+.carousel-container .prev, 
+.carousel-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.carousel-container .prev {
+  left: 10px;
+}
+
+.carousel-container .next {
+  right: 10px;
+}
+
+.carousel-container .prev:hover, 
+.carousel-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .about-us1 p {
+    font-size: 18px;
+  }
+
+  .aboutuspage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-container {
+    height: 400px;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-container .prev,
+  .carousel-container .next {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .about-us1 p {
+    font-size: 16px;
+  }
+
+  .carousel-container {
+    height: 300px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .carousel-container .prev,
+  .carousel-container .next {
+    font-size: 16px;
+    padding: 6px;
+  }
+}

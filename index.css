@@ -1,0 +1,366 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+/* Center the h1 element and apply the color combination */
+h1 {
+  font-size: 36px;
+  color: #84C444; /* Greenish color for the text */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+color: #fff; /* Black background */
+  background-color: #84C444; /* Green text on black background */
+  border-radius: 20px; /* Rounded corners */
+  width: 80%; /* Give it some width */
+  max-width: 800px; /* Limit maximum width for larger screens */
+  margin-top: 5vh; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px; /* Adjust font size on smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+    width: 90%; /* Make the width larger on smaller screens */
+    margin-top: 20vh; /* Slightly adjust vertical margin */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Further reduce font size on mobile */
+    padding: 10px; /* Less padding for mobile */
+    width: 95%; /* Allow more width for mobile */
+    margin-top: 15vh; /* Adjust vertical positioning for mobile */
+  }
+}
+
+
+/* Style for the header (Navigation Bar) */
+header {
+  position: sticky;
+  top: 0; /* Keeps the header at the top of the screen */
+  background-color: #84C444; /* Ensure the background is visible */
+  z-index: 1000; /* Make sure the header stays above other content */
+  width: 100%;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional: Adds shadow to the header */
+  padding: 10px 10px; /* Adds some padding to the header */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+}
+
+nav li {
+  margin: 0 20px; /* Add spacing between navigation items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Text color for links */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: block;
+  transition: color 0.3s ease;
+}
+nav img{
+  border: none;
+  border-radius: 50%;
+}
+nav a:hover {
+  color: #333; /* Change color on hover */
+}
+header li{
+  list-style-type: none;
+}
+header li a{
+  text-decoration: none;
+  color: #fff; /* Text color for links */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: block;
+  transition: color 0.3s ease;
+}
+header li a:hover {
+  color: #333; /* Change color on hover */
+}
+header li img{
+  border: none;
+  border-radius: 30%;
+}
+header li img:hover{
+  color: #333; 
+  
+}
+/* Login Form Styles */
+.login-form {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="tel"],
+.login-form input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  background-color: #84C444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #f4a261;
+}
+
+#verificationSection {
+  margin-top: 20px;
+}
+
+#verificationSection input[type="text"] {
+  margin-bottom: 10px;
+}
+
+#verificationSection button {
+  padding: 10px 20px;
+  background-color: #84C444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#verificationSection button:hover {
+  background-color: #333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #84C444;
+  color: white;
+  /* padding: 10px 0; */
+  margin-top: 100px;
+  height: 400px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-top: 10px;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #333;
+}
+.social-icons{
+  margin-top: 2px;
+}
+.social-icons a {
+
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+.newsletter-input {
+  padding: 10px;
+  width: 80%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #333;
+}
+
+ 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: white;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+} 
+
+.footer-links a:hover {
+  color: #f4a261;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px; /* Adjust header font size */
+  }
+
+  .page h1 {
+    font-size: 28px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 14px; /* Adjust paragraph font size */
+    padding: 8px;
+  }
+
+  section {
+    padding: 30px 15px; /* Adjust padding for sections */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+}
+
+/* When screen width is smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Smaller header font size for mobile */
+  }
+
+  .page h1 {
+    font-size: 24px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 12px; /* Adjust paragraph font size */
+    padding: 6px;
+  }
+
+  section {
+    padding: 20px 10px; /* Adjust padding for mobile */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 12px; /* Adjust paragraph font size */
+  }
+}

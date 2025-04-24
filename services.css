@@ -1,0 +1,295 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+ 
+ 
+}
+.image_container img{
+  margin-top: 50px;
+  width: 100vw;
+  height: 700px;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.prod_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.price {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price span {
+  font-size: 14px;
+  color: #d9534f;
+}
+
+.add-to-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #84C444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover .add-to-cart {
+  opacity: 1;
+}
+
+.add-to-cart:hover {
+  background-color: #84C444;
+}
+
+/* Total Price Container */
+#total-price-container {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#total-price {
+  font-weight: bold;
+  color: #84C444;
+}
+/* Style for the user details form */
+#user-details-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#user-details-container h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form textarea,
+form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style for the order summary */
+#user-details-display {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#user-details-display h3 {
+  text-align: center;
+  color: #333;
+}
+
+#user-details-display p {
+  font-size: 14px;
+  color: #444;
+}
+
+#user-details-display p strong {
+  color: #333;
+}
+
+/* Style for total price */
+#total-price-container {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+#total-price {
+  font-weight: bold;
+  color: #4CAF50;
+}
+.headingone{
+  padding: 10px;
+border: 1px solid rgb(27, 100, 51);
+border-radius: 20px;
+  margin-top: 50px;
+  background-color:  #84C444 ;
+  color: #ffffff;
+  width: fit-content;
+}
+@media (max-width: 480px) {
+  /* Adjust product layout for mobile screens */
+  .product {
+    width: 100%;
+    max-width: 280px; /* Reduce the width for small screens */
+    padding: 15px;
+  }
+
+  .image_container img {
+    height: 400px; /* Adjust image height on mobile */
+  }
+
+  /* Adjust heading sizes */
+  h1 {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  #total-price-container {
+    font-size: 16px;
+  }
+
+  button[type="submit"] {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px; /* Adjust header font size */
+  }
+
+  .page h1 {
+    font-size: 28px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 14px; /* Adjust paragraph font size */
+    padding: 8px;
+  }
+
+  section {
+    padding: 30px 15px; /* Adjust padding for sections */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+}
+
+/* When screen width is smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Smaller header font size for mobile */
+  }
+
+  .page h1 {
+    font-size: 24px; /* Adjust page heading size */
+  }
+
+  .para {
+    font-size: 12px; /* Adjust paragraph font size */
+    padding: 6px;
+  }
+
+  section {
+    padding: 20px 10px; /* Adjust padding for mobile */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust subheading font size */
+  }
+
+  p {
+    font-size: 12px; /* Adjust paragraph font size */
+  }
+}
